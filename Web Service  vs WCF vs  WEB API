@@ -1,0 +1,53 @@
+Web Service
+
+It is based on SOAP and returns data in XML format.
+It supports only the HTTP protocol.
+It is not open source but can be consumed by any client that understands XML.
+It can be hosted only on IIS.
+
+WCF
+
+It is also based on SOAP and returns data in XML format.
+It is the evolution of web services (ASMX) and support various protocols like TCP, HTTP, HTTPS, Named Pipes, MSMQ.
+The main issue with WCF is its tedious and extensive configuration.
+It is not open source but can be consumed by any client that understands XML.
+It can be hosted with in the application or on IIS or using window service.
+
+WCF REST
+
+To use WCF as a WCF REST service you have to enable webHttpBindings.
+It supports HTTP GET and POST verbs by [WebGet] and [WebInvoke] attributes respectively.
+To enable other HTTP verbs you have to do some configuration in IIS to accept request of that particular verb on .svc files.
+Passing data through parameters using a WebGet needs configuration. The UriTemplate must be specified.
+It supports XML, JSON and ATOM data format.
+
+Web API
+
+This is the new framework for building HTTP services the easy and simple way.
+
+Web API is open source an ideal platform for building RESTful services using the .NET Framework.
+
+Unlike a WCF REST service, it use the full features of HTTP (like URIs, request/response headers, caching, versioning, 
+various content formats).
+
+It also supports the MVC features such as routing, controllers, action results, filter, model binders, IOC container or 
+dependency injection, unit testing that makes it more simple and robust.
+
+It can be hosted within the application or on IIS.
+
+It is a light weight architecture and good for devices which have limited bandwidth like smart phones.
+
+Responses are formatted by Web API’s MediaTypeFormatter into JSON, XML or whatever format you want to add as a MediaTypeFormatter.
+
+Choosing between WCF or Web API
+
+Choose WCF when you want to create a service that should support special scenarios such as one way messaging, message queues, 
+duplex communication etc.
+
+Choose WCF when you want to create a service that can use fast transport channels when available, such as TCP, Named Pipes, or 
+maybe even UDP (in WCF 4.5), and you also want to support HTTP when all other transport channels are unavailable.
+
+Choose Web API when you want to create a resource-oriented services over HTTP that can use the full features of HTTP 
+(like URIs, request/response headers, caching, versioning, various content formats).
+
+Choose Web API when you want to expose your service to a broad range of clients including browsers, mobiles, iPhone and tablets
