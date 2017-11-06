@@ -1,0 +1,56 @@
+In the simplest of terms, an API is a piece of software that plugs one application directly into the data and services of another by 
+granting it access to specific parts of a server. APIs let two pieces of software communicate, 
+they’re the basis for everything we do on mobile, and they allow us to streamline IT architectures, 
+power savvier marketing efforts, and make easier to share data sets.
+
+Like all software, APIs can be pretty straightforward or incredibly complex, 
+and there are different ways to program one with different attributes that are better suited to your application. 
+Also, with more built-in features comes more overhead—something we’ll see when we look at what SOAP has to offer.
+
+
+Rest APi
+
+REST is all about simplicity, thanks to HTTP protocols.
+
+REST APIs facilitate client-server communications and architectures. If it’s RESTful, it’s built on this client-server principle, 
+with round trips between the two passing payloads of information.
+
+REST APIs use a single uniform interface. This simplifies how applications interact with the API by requiring they all interface in 
+the same way, through the same portal. This has advantages and disadvantages; check with your developer to see if this will affect 
+implementation changes down the road.
+
+REST is optimized for the web. Using JSON as its data format makes it compatible with browsers.
+
+REST is known for excellent performance and scalability. But, like any technology, it can get bogged down or bog down your app. 
+That’s why languages like GraphQL have come along to address problems even REST can’t solve
+
+
+Difference
+
+SOAP is a protocol. REST is an architectural style. An API is designed to expose certain aspects of an application’s business 
+logic on a server, and SOAP uses a service interface to do this while REST uses URIs.
+
+REST APIs access a resource for data (a URI); SOAP APIs perform an operation. REST is an architecture that’s more data-driven; 
+SOAP is a standardized protocol for transferring structured information that’s more function-driven.
+
+REST permits many different data formats including plain text, HTML, XML, and JSON, which is a great fit for data and yields more 
+browser compatibility; SOAP only uses XML.
+
+Security is handled differently. SOAP supports WS-Security, which is great at the transport level and a bit more comprehensive than SSL,
+and more ideal for integration with enterprise-level security tools. Both support SSL for end-to-end security, and REST can use the 
+secure version of the HTTP protocol, HTTPS.
+
+SOAP requires more bandwidth; REST requires fewer resources (depending on the API). There’s a little more overhead with SOAP out of 
+the gate, on account of the envelope-style of payload transport. Because REST is used primarily for web services, its being lightweight
+is an advantage in those scenarios.
+
+REST calls can be cached, SOAP-based calls cannot be cached. Data can be marked as cacheable, which means it can be reused by 
+the browser later without having to initiate another request back to the server. This saves time and resources.
+
+An API is built to handle your app’s payload, and REST and SOAP do this differently. A payload is data sent over the internet, and 
+when a payload is “heavy,” it requires more resources. REST tends to use HTTP and JSON, which lighten the payload; SOAP relies more 
+on XML.
+
+
+
+https://www.upwork.com/hiring/development/soap-vs-rest-comparing-two-apis/
